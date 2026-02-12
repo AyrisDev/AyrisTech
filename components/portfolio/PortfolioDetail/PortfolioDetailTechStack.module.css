@@ -1,0 +1,63 @@
+.section {
+    padding: 0;
+    margin-bottom: 6rem;
+}
+
+.headerLine {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #444;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #110e0d;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    background: #161211;
+}
+
+.iconWrapper {
+    color: var(--primary);
+    /* Keep consistent color */
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e5e5e5;
+}
+
+.techIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+}

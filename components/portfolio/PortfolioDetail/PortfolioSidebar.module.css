@@ -1,0 +1,68 @@
+.sidebar {
+    position: relative;
+    height: 100%;
+}
+
+.stickyNav {
+    position: sticky;
+    top: 120px;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.navList a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #444;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+}
+
+.navList a:hover,
+.navList a.active {
+    color: var(--primary);
+}
+
+.ctaBox {
+    background: #0c0c0c;
+    border: 1px solid rgba(255, 77, 0, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.ctaTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.ctaText {
+    font-size: 0.85rem;
+    color: #a1a1aa;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.ctaBtn {
+    width: 100%;
+    background: var(--primary);
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+}
+
+.ctaBtn:hover {
+    background: var(--primary-hover);
+}

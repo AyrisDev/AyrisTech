@@ -1,0 +1,35 @@
+.cta {
+    padding: 6rem 2rem;
+    background-color: #050505;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #a1a1aa;
+    margin-bottom: 2.5rem;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--primary);
+    box-shadow: 0 0 30px rgba(255, 77, 0, 0.4);
+    transform: translateY(-2px);
+}

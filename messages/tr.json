@@ -1,0 +1,338 @@
+{
+    "Navbar": {
+        "home": "Anasayfa",
+        "services": "Hizmetler",
+        "portfolio": "Portfolyo",
+        "blog": "Blog",
+        "about": "Hakkımızda",
+        "contact": "İletişim",
+        "cta": "Teklif Al"
+    },
+    "Hero": {
+        "badge": "YapayZeka & Blockchaın",
+        "titlePrefix": "Geleceği",
+        "titleHighlight": "Şekillendiriyoruz",
+        "titleSuffix": "",
+        "subtitle": "AyrisTech, kurumsal düzeyde dijital dönüşüm sağlar. Gelecek nesil iş dünyası için imkansızı inşa ediyoruz.",
+        "ctaStart": "Başla",
+        "ctaCase": "Projeleri İncele"
+    },
+    "About": {
+        "hero": {
+            "title": "BİZ KİMİZ",
+            "who": "BİZ KİMİZ",
+            "titlePrefix": "Dijital Çağın",
+            "titleHighlight": "Mimarlarıyız.",
+            "desc": "Karmaşık problemleri zarif dijital çözümlere dönüştürüyoruz. Ayris Tech, inovasyonun icrayla buluştuğu, iddialı işletmeler için gelecek altyapısının inşa edildiği yerdir.",
+            "ctaWork": "Çalışmalarımızı İnceleyin",
+            "ctaCareers": "Kariyer Fırsatları"
+        },
+        "stats": {
+            "years": "AKTİF YIL",
+            "projects": "TAMAMLANAN PROJE",
+            "clients": "KURUMSAL MÜŞTERİ",
+            "offices": "KÜRESEL OFİS"
+        },
+        "purpose": {
+            "title": "Amacımız",
+            "desc": "Biz sadece kod yazmıyoruz; sonuçlar ekiyoruz. Temel hedefimiz insan potansiyeli ile makine yeteneği arasındaki boşluğu doldurmaktır.",
+            "mission": {
+                "title": "Misyonumuz",
+                "text": "İşletmeleri ölçeklenebilir, son teknoloji yazılımlarla güçlendirmek. Teknik borcu ortadan kaldırmaya ve siz büyüdükçe büyüyen, geleceğe hazır mimariler sunmaya çalışıyoruz."
+            },
+            "vision": {
+                "title": "Vizyonumuz",
+                "text": "Teknolojinin insanlığa kusursuz bir şekilde hizmet ettiği bir dünya. Karmaşıklığın ortadan kalktığı, geriye sadece saf ve verimli bir faydanın kaldığı bir dijital manzara hayal ediyoruz."
+            }
+        },
+        "values": {
+            "title": "Temel Değerler",
+            "desc": "Kodumuza, tasarımımıza ve ilişkilerimize rehberlik eden ilkeler.",
+            "join": "Ekibe katılın",
+            "innovation": {
+                "title": "İnovasyon",
+                "text": "Yeni teknolojiler ve yaratıcı problem çözme ile her gün sınırları zorluyoruz."
+            },
+            "transparency": {
+                "title": "Şeffaflık",
+                "text": "Her aşamada net iletişim. Kodları, planları paylaşıyor ve darboğazları açıyoruz."
+            },
+            "precision": {
+                "title": "Hassasiyet",
+                "text": "En yüksek standart testlerini karşılayan kesinleşmiş performans, kod ve tasarım sonuçları."
+            },
+            "userCentricity": {
+                "title": "Kullanıcı Odaklılık",
+                "text": "Onu kullanan insanlar için inşa ediyoruz. Kullanıcılar en önemli geliştirme faktörümüzdür."
+            }
+        },
+        "team": {
+            "title": "Makinenin Arkasındaki Akıllarla Tanışın"
+        },
+        "cta": {
+            "title": "Geleceği İnşa Etmeye Hazır mısınız?",
+            "desc": "Ayris Tech'in dijital altyapınızı nasıl dönüştürebileceğini ve büyümenizi nasıl hızlandırabileceğini tartışalım.",
+            "btn": "Bir Görüşme Başlatın"
+        }
+    },
+    "Blog": {
+        "hero": {
+            "badge": "Öne Çıkan Makale",
+            "title": "Web Geliştirmede Kuantum Bilişimin Geleceği",
+            "excerpt": "Ayris Insights: Kübitlerin ve süperpozisyonun sunucu tarafı işleme ve şifreleme standartlarında düşündüğünüzden daha erken nasıl devrim yaratabileceğini keşfediyoruz.",
+            "cta": "Öne Çıkan Makaleyi Oku",
+            "readTime": "8 dk okuma"
+        },
+        "filters": {
+            "all": "Tüm Yazılar",
+            "engineering": "Mühendislik",
+            "design": "Tasarım",
+            "strategy": "Strateji",
+            "cases": "Vaka Analizleri",
+            "ai": "Yapay Zeka"
+        },
+        "grid": {
+            "readMore": "Daha Fazla Oku",
+            "loadMore": "Daha Fazla Makale Yükle"
+        },
+        "newsletter": {
+            "title": "Zirvede Kalın",
+            "desc": "Dijital zekanın en son gelişmeleri için içgörülerimize abone olun.",
+            "input": "E-posta adresinizi girin",
+            "button": "Abone Ol",
+            "consent": "Abone olarak Gizlilik Politikamızı kabul etmiş olursunuz."
+        },
+        "related": {
+            "title": "Devamını Oku...",
+            "viewAll": "Tüm yazıları gör →"
+        }
+    },
+    "Footer": {
+        "tagline": "Dijital zekanın geleceğini inşa ediyoruz. Bağlantılı dünya için en yeni çözümler sunuyoruz.",
+        "columns": {
+            "company": {
+                "title": "ŞİRKET",
+                "links": {
+                    "home": "Anasayfa",
+                    "about": "Hakkımızda",
+                    "careers": "Kariyer",
+                    "contact": "İletişim"
+                }
+            },
+            "services": {
+                "title": "HİZMETLER",
+                "links": {
+                    "main": "Tüm Hizmetler",
+                    "ai": "Yapay Zeka",
+                    "blockchain": "Blok Zinciri",
+                    "web": "Web ve Mobil"
+                }
+            },
+            "resources": {
+                "title": "KAYNAKLAR",
+                "links": {
+                    "blog": "Blog & İçgörüler",
+                    "portfolio": "Vaka Analizleri",
+                    "privacy": "Gizlilik Politikası"
+                }
+            }
+        },
+        "bottom": {
+            "copyright": "Tüm hakları saklıdır.",
+            "privacy": "Gizlilik Politikası",
+            "terms": "Kullanım Şartları",
+            "cookies": "Çerez Ayarları"
+        }
+    },
+    "Contact": {
+        "title": "Geleceği Birlikte İnşa Edelim",
+        "description": "Çığır açacak bir fikriniz mi var? Ayris Tech'in en son yapay zeka ve yazılım çözümleriyle bunu nasıl hayata geçirebileceğimizi konuşalım.",
+        "form": {
+            "name": "Ad Soyad",
+            "email": "E-posta Adresi",
+            "subject": "Konu",
+            "message": "Mesajınız",
+            "placeholder": {
+                "name": "Adınızı giriniz",
+                "email": "ad@ornek.com",
+                "subject": "Ne aramıştınız?",
+                "message": "Bize projenizden bahsedin..."
+            },
+            "submit": "Mesajı Gönder",
+            "submitting": "Gönderiliyor...",
+            "success": "Mesajınız başarıyla gönderildi! Sizinle en kısa sürede iletişime geçeceğiz.",
+            "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz."
+        },
+        "info": {
+            "email": "Bize e-posta gönderin",
+            "phone": "Bizi arayın",
+            "address": "Ofis",
+            "hours": "Çalışma Saatleri"
+        }
+    },
+    "Portfolio": {
+        "client": "MÜŞTERİ",
+        "role": "ROL",
+        "sector": "SEKTÖR",
+        "year": "YIL",
+        "website": "WEBSITE",
+        "visitLive": "Siteye Git ↗",
+        "overview": "Genel Bakış",
+        "challenge": "Zorluklar",
+        "solution": "Çözüm",
+        "technologies": "KULLANILAN TEKNOLOJİLER",
+        "sidebar": {
+            "overview": "GENEL BAKIŞ",
+            "challenge": "ZORLUKLAR & ÇÖZÜM",
+            "results": "SONUÇLAR",
+            "visuals": "GÖRSELLER",
+            "ctaTitle": "Sonuçları beğendiniz mi?",
+            "ctaText": "Bir sonraki projenizi konuşalım.",
+            "ctaBtn": "PROJEYE BAŞLA"
+        },
+        "footer": {
+            "nextCase": "SONRAKİ PROJE",
+            "viewCase": "Projeyi İncele"
+        }
+    },
+    "PortfolioPage": {
+        "title": "Portfolyo | Ayris Tech - Seçilmiş İşler",
+        "description": "Yüksek kaliteli dijital ekosistemlerimizin vitrini. AAA oyunlardan blok zinciri altyapısına."
+    },
+    "PortfolioGrid": {
+        "badge": "Portfolyo",
+        "title": "Son",
+        "titleHighlight": "Projelerimiz",
+        "filters": {
+            "all": "TÜM İŞLER",
+            "ai": "YAPAY ZEKA",
+            "blockchain": "BLOK ZİNCİRİ",
+            "game": "OYUN",
+            "mobile": "MOBİL",
+            "web": "WEB",
+            "security": "GÜVENLİK"
+        }
+    },
+    "PortfolioHero": {
+        "badge": "DİJİTAL SINIRI YENİDEN TASARLIYORUZ",
+        "titleLine1": "GELECEĞİN",
+        "titleLine2": "ARAYÜZÜ",
+        "subtitle": "Ayris Tech, yüksek kaliteli <strong>dijital ekosistemler</strong> tasarlar. AAA oyun mekaniklerinden blok zinciri altyapısına kadar, düşünülemez olanı inşa ediyoruz.",
+        "cta": "VİTRİNİ KEŞFET",
+        "sideText": {
+            "line1": "Hızlı hareket eden",
+            "line2": "dijital deneyimler",
+            "line3": "üretiyoruz."
+        }
+    },
+    "ServicesPage": {
+        "metadata": {
+            "title": "Hizmetler | Ayris Tech - Dijital Mükemmellik",
+            "description": "Oyun Geliştirmeden Yapay Zeka ve Blok Zinciri'ne kadar dijital çözümlerimizi keşfedin."
+        },
+        "Hero": {
+            "badge": "GELECEĞE HAZIR",
+            "titleLine1": "Geleceği Dijital",
+            "titleLine2": "Mükemmellikle İnşa Edin",
+            "subtitle": "Dijital sınır için özel son teknoloji çözümler. Karmaşık zorlukları sorunsuz, ölçeklenebilir teknolojilere dönüştürüyoruz."
+        },
+        "Grid": {
+            "gameDev": {
+                "title": "Oyun Geliştirme",
+                "description": "Unity ve Unreal Engine üzerinde kurulan sürükleyici dünyalar. Mobil oyunlardan AAA konsol deneyimlerine kadar.",
+                "tags": "Unity, Unreal 5, VR/AR"
+            },
+            "ai": {
+                "title": "Yapay Zeka Çözümleri",
+                "description": "Öğrenen ve uyum sağlayan akıllı sistemler. Daha akıllı iş kararları için tahmin analitiği, NLP ve bilgisayarlı görü.",
+                "tags": "Makine Öğrenimi, NLP, Veri"
+            },
+            "blockchain": {
+                "title": "Blok Zinciri",
+                "description": "Güvenli, merkeziyetsiz altyapı. Akıllı sözleşmeler, DeFi protokolleri ve sağlam temeller üzerine kurulu NFT pazaryerleri.",
+                "tags": "Akıllı Sözleşmeler, DeFi, Web3"
+            }
+        },
+        "CTA": {
+            "text": "Dijital dönüşümünüze başlamaya hazır mısınız?",
+            "button": "Detaylı Portfolyoyu İncele →"
+        },
+        "WhyChooseUs": {
+            "title": "Neden Ayris Tech?",
+            "statusLabel": "SİSTEM DURUMU",
+            "statusValue": "%100 Operasyonel",
+            "rapid": {
+                "title": "Hızlı Deployment",
+                "description": "MVP ve ölçeklenebilir ürünleri rakiplerden daha hızlı sunmak için çevik metodolojiler kullanıyoruz."
+            },
+            "security": {
+                "title": "Kurumsal Güvenlik",
+                "description": "Tasarım aşamasından itibaren güvenlik. Protokollerimiz verilerinizi modern tehditlere karşı korur."
+            },
+            "support": {
+                "title": "7/24 Uzman Desteği",
+                "description": "Özel mühendislik ekibimiz, lansman sonrası sorunsuz operasyonlar için her zaman yanınızda."
+            }
+        }
+    },
+    "HomePage": {
+        "Services": {
+            "badge": "UZMANLIK ALANIMIZ",
+            "titleLine1": "Modern İşletmeler İçin",
+            "titleLine2": "Çözümler",
+            "desc": "Gerçek iş değeri yaratmak için en son teknolojiyi stratejik uygulama ile birleştiriyoruz.",
+            "learnMore": "Daha Fazla Bilgi →",
+            "items": {
+                "ai": {
+                    "title": "Yapay Zeka Çözümleri",
+                    "desc": "Verimlilik için optimize edilmiş özel öğrenme modelleri. Tahmine dayalı analitik, NLP ve otomasyon çözümleri."
+                },
+                "blockchain": {
+                    "title": "Blokzincir Geliştirme",
+                    "desc": "İşletmeler için uyarlanmış akıllı sözleşmeler, cüzdanlar, dApp geliştirme ve özel blok zinciri altyapısı."
+                },
+                "security": {
+                    "title": "Mobil ve Web Uygulamaları",
+                    "desc": "Kurumsal düzeyde mobil ve web uygulamaları"
+                }
+            }
+        },
+        "Engineering": {
+            "badge": "NEDEN AYRIS TECH",
+            "titleLine1": "İmkansızı",
+            "titleLine2": "Mühendislikle Çözüyoruz",
+            "desc": "Sadece kod yazmıyoruz; ekosistemler tasarlıyoruz. Yaklaşımımız, ölçeklenebilir, güvenli ve geleceğe hazır çözümler sunmak için titiz mühendislik standartlarını yaratıcı problem çözme ile birleştiriyor.",
+            "items": {
+                "rapid": {
+                    "title": "Hızlı Deployment",
+                    "desc": "Konseptten MVP'ye aylar değil, haftalar içinde."
+                },
+                "security": {
+                    "title": "Mobil ve Web Uygulamaları",
+                    "desc": "Askeri düzeyde şifreleme ve yerleşik uyumluluk."
+                },
+                "arch": {
+                    "title": "Temiz Mimari",
+                    "desc": "Sizinle birlikte büyüyen sürdürülebilir, ölçeklenebilir kod tabanı."
+                }
+            }
+        },
+        "Testimonial": {
+            "text": "\"Ayris Tech eski altyapımızı aylar değil, haftalar içinde dönüştürdü. Merkeziyetsiz sistemler konusundaki kavrayışları sektörde benzersiz.\"",
+            "author": "Marcus Chen",
+            "role": "CTO, BlockCore"
+        },
+        "CTA": {
+            "title": "Ölçeklenmeye hazır mısınız?",
+            "subtitle": "Hadi imkansız bir şey inşa edelim. Bugün uzmanlarımızla bir görüşme planlayın.",
+            "button": "Projenizi Başlatın"
+        }
+    },
+    "PortfolioCTA": {
+        "badge": "İLETİŞİME GEÇ",
+        "title": "İMKANSIZI",
+        "titleHighlight": "İNŞA EDELİM.",
+        "subtitle": "İster AAA kalitesinde bir oyun, ister merkeziyetsiz bir uygulama olsun; ekibimiz vizyonunuzu çevrimiçi dünyaya taşımaya hazır.",
+        "button": "PROJENİZİ BAŞLATIN"
+    }
+}

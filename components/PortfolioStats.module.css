@@ -1,0 +1,82 @@
+.stats {
+    background-color: #080808;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 3rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+}
+
+.progressContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+    max-width: 400px;
+    justify-content: flex-end;
+}
+
+.progressBar {
+    height: 4px;
+    background: #1a1a1a;
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    width: 70%;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.progressLabel {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #666;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .progressContainer {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+}

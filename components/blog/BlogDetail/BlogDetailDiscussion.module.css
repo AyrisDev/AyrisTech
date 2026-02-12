@@ -1,0 +1,161 @@
+.discussion {
+    padding: 5rem 2rem;
+    background-color: #050505;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.commentForm {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.formAvatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.formContent {
+    flex: 1;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 120px;
+    background: #0c0c0c;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.95rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: rgba(255, 77, 0, 0.3);
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitBtn {
+    background: var(--primary);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.submitBtn:hover {
+    background: var(--primary-hover);
+}
+
+.commentRow {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.commentAvatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.commentContent {
+    flex: 1;
+}
+
+.commentMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.commentAuthor {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.commentRole {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #666;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+}
+
+.commentDate {
+    font-size: 0.8rem;
+    color: #444;
+}
+
+.commentText {
+    font-size: 0.95rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.commentActions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.actionBtn {
+    background: transparent;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.actionBtn:hover {
+    color: var(--primary);
+}
+
+.replies {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.replyRow {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}

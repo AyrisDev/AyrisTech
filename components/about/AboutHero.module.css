@@ -1,0 +1,125 @@
+.hero {
+    padding: 10rem 2rem 6rem;
+    background-color: #050505;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 77, 0, 0.1);
+    border: 1px solid rgba(255, 77, 0, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.description {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primaryBtn {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.secondaryBtn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.experienceImage {
+    height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=2831&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 77, 0, 0.2);
+    box-shadow: 0 0 40px rgba(255, 77, 0, 0.1);
+}
+
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.8), transparent 40%);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ctaGroup {
+        justify-content: center;
+    }
+
+    .imageWrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

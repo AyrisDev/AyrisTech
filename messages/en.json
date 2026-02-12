@@ -1,0 +1,336 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact",
+        "cta": "Get a Quote"
+    },
+    "Hero": {
+        "badge": "NEXT GEN AGENCY",
+        "titlePrefix": "Forging the Future with",
+        "titleHighlight": "AI & Blockchain",
+        "subtitle": "Ayris Tech delivers enterprise-grade digital transformation. We build the impossible for the next generation of business.",
+        "ctaStart": "Get Started",
+        "ctaCase": "View Case Studies"
+    },
+    "About": {
+        "hero": {
+            "who": "WHO WE ARE",
+            "titlePrefix": "Architects of the",
+            "titleHighlight": "Digital Age.",
+            "desc": "We turn complex problems into elegant digital solutions. Ayris Tech is where innovation meets execution, building the future infrastructure for ambitious enterprises.",
+            "ctaWork": "Explore Our Work",
+            "ctaCareers": "View Careers"
+        },
+        "stats": {
+            "years": "YEARS ACTIVE",
+            "projects": "PROJECTS SHIPPED",
+            "clients": "ENTERPRISE CLIENTS",
+            "offices": "GLOBAL OFFICES"
+        },
+        "purpose": {
+            "title": "Our Purpose",
+            "desc": "We don't just write code; we engineer outcomes. Our fundamental goal is to bridge the gap between human potential and machine capability.",
+            "mission": {
+                "title": "Our Mission",
+                "text": "To empower businesses with cutting-edge software that scales. We strive to eliminate technical debt and introduce future-proof architectures that grow as you grow."
+            },
+            "vision": {
+                "title": "Our Vision",
+                "text": "A world where technology serves humanity seamlessly. We envision a digital landscape where complexity is abstracted away, leaving only pure, efficient utility."
+            }
+        },
+        "values": {
+            "title": "Core Values",
+            "desc": "The principles that guide our code, our design, and our relationships.",
+            "join": "Join the team",
+            "innovation": {
+                "title": "Innovation",
+                "text": "Pushing boundaries daily with new technologies and creative problem solving."
+            },
+            "transparency": {
+                "title": "Transparency",
+                "text": "Clear communication at every stage. We share codes, plans and open bottlenecks."
+            },
+            "precision": {
+                "title": "Precision",
+                "text": "Finalized performance, code and design results that meet highest standard tests."
+            },
+            "userCentricity": {
+                "title": "User-Centricity",
+                "text": "Building for the people who use it. Users are our most important development factor."
+            }
+        },
+        "team": {
+            "title": "Meet the Minds Behind the Machine"
+        },
+        "cta": {
+            "title": "Ready to Build the Future?",
+            "desc": "Let's discuss how Ayris Tech can transform your digital infrastructure and accelerate your growth.",
+            "btn": "Start a Conversation"
+        }
+    },
+    "Blog": {
+        "hero": {
+            "badge": "Featured Article",
+            "title": "The Future of Quantum Computing in Web Development",
+            "excerpt": "Ayris Insights: Exploring how qubits and superposition might revolutionize server-side processing and encryption standards sooner than you think.",
+            "cta": "Read Featured Article",
+            "readTime": "8 min read"
+        },
+        "filters": {
+            "all": "All Posts",
+            "engineering": "Engineering",
+            "design": "Design",
+            "strategy": "Strategy",
+            "cases": "Case Studies",
+            "ai": "AI & ML"
+        },
+        "grid": {
+            "readMore": "Read More",
+            "loadMore": "Load More Articles"
+        },
+        "newsletter": {
+            "title": "Stay ahead of the curve",
+            "desc": "Subscribe to our insights for the latest in digital intelligence.",
+            "input": "Enter your email",
+            "button": "Subscribe",
+            "consent": "By subscribing, you agree to our Privacy Policy."
+        },
+        "related": {
+            "title": "Read More...",
+            "viewAll": "View all posts →"
+        }
+    },
+    "Footer": {
+        "tagline": "Forging the future of digital intelligence. We provide cutting-edge solutions for the connected world.",
+        "columns": {
+            "company": {
+                "title": "COMPANY",
+                "links": {
+                    "home": "Home",
+                    "about": "About Us",
+                    "careers": "Careers",
+                    "contact": "Contact"
+                }
+            },
+            "services": {
+                "title": "SERVICES",
+                "links": {
+                    "main": "All Services",
+                    "ai": "AI Solutions",
+                    "blockchain": "Blockchain",
+                    "web": "Web & Mobile"
+                }
+            },
+            "resources": {
+                "title": "RESOURCES",
+                "links": {
+                    "blog": "Blog & Insights",
+                    "portfolio": "Case Studies",
+                    "privacy": "Privacy Policy"
+                }
+            }
+        },
+        "bottom": {
+            "copyright": "All rights reserved.",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookie Settings"
+        }
+    },
+    "Contact": {
+        "title": "Let's Build the Future Together",
+        "description": "Have a groundbreaking idea? Let's discuss how Ayris Tech can bring it to life with cutting-edge AI and software solutions.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "subject": "Subject",
+            "message": "Message",
+            "placeholder": {
+                "name": "Enter your name",
+                "email": "name@example.com",
+                "subject": "What are you looking for?",
+                "message": "Tell us about your project..."
+            },
+            "submit": "Send Message",
+            "submitting": "Sending...",
+            "success": "Message sent successfully! We will get back to you soon.",
+            "error": "An error occurred. Please try again later."
+        },
+        "info": {
+            "email": "Email us at",
+            "phone": "Call us",
+            "address": "Office",
+            "hours": "Working Hours"
+        }
+    },
+    "Portfolio": {
+        "client": "CLIENT",
+        "role": "ROLE",
+        "sector": "SECTOR",
+        "year": "YEAR",
+        "website": "WEBSITE",
+        "visitLive": "Visit Live ↗",
+        "overview": "Overview",
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "technologies": "TECHNOLOGIES USED",
+        "sidebar": {
+            "overview": "OVERVIEW",
+            "challenge": "THE CHALLENGE",
+            "results": "THE RESULTS",
+            "visuals": "VISUALS",
+            "ctaTitle": "Interested in results?",
+            "ctaText": "Let's discuss your next breakthrough project.",
+            "ctaBtn": "START A PROJECT"
+        },
+        "footer": {
+            "nextCase": "NEXT CASE STUDY",
+            "viewCase": "View Case Study"
+        }
+    },
+    "PortfolioPage": {
+        "title": "Portfolio | Ayris Tech - Selected Works",
+        "description": "A showcase of our high-fidelity digital ecosystems, from AAA games to blockchain infrastructure."
+    },
+    "PortfolioGrid": {
+        "badge": "CASE STUDIES — SELECTED WORKS",
+        "title": "SELECTED",
+        "titleHighlight": "WORKS",
+        "filters": {
+            "all": "ALL WORKS",
+            "ai": "AI",
+            "blockchain": "BLOCKCHAIN",
+            "game": "GAME",
+            "mobile": "MOBILE",
+            "web": "WEB",
+            "security": "SECURITY"
+        }
+    },
+    "PortfolioHero": {
+        "badge": "REDESIGNING THE DIGITAL FRONTIER",
+        "titleLine1": "FUTURE",
+        "titleLine2": "INTERFACE",
+        "subtitle": "Ayris Tech architects high-fidelity <strong>digital ecosystems</strong>. From AAA game mechanics to blockchain infrastructure, we build the unthinkable.",
+        "cta": "EXPLORE SHOWCASE",
+        "sideText": {
+            "line1": "Crafting digital",
+            "line2": "experiences that",
+            "line3": "move fast."
+        }
+    },
+    "ServicesPage": {
+        "metadata": {
+            "title": "Services | Ayris Tech - Digital Excellence",
+            "description": "Explore our range of digital solutions from Game Development to AI and Blockchain."
+        },
+        "Hero": {
+            "badge": "FUTURE READY",
+            "titleLine1": "Building the Future",
+            "titleLine2": "with Digital Excellence",
+            "subtitle": "Cutting-edge solutions tailored for the digital frontier. We transform complex challenges into seamless, scalable technologies."
+        },
+        "Grid": {
+            "gameDev": {
+                "title": "Game Development",
+                "description": "Immersive worlds built on Unity and Unreal Engine. From mobile casual to AAA console experiences with stunning fidelity.",
+                "tags": "Unity, Unreal 5, VR/AR"
+            },
+            "ai": {
+                "title": "AI Solutions",
+                "description": "Intelligent systems that learn and adapt. Predictive analytics, NLP, and computer vision integration for smarter business decisions.",
+                "tags": "Machine Learning, NLP, Data"
+            },
+            "blockchain": {
+                "title": "Blockchain",
+                "description": "Secure, decentralized infrastructure. Smart contracts, DeFi protocols, and NFT marketplaces built on solid foundations.",
+                "tags": "Smart Contracts, DeFi, Web3"
+            }
+        },
+        "CTA": {
+            "text": "Ready to start your digital transformation?",
+            "button": "View Detailed Portfolio →"
+        },
+        "WhyChooseUs": {
+            "title": "Why Choose Ayris Tech?",
+            "statusLabel": "SYSTEM STATUS",
+            "statusValue": "100% Operational",
+            "rapid": {
+                "title": "Rapid Deployment",
+                "description": "We utilize agile methodologies to deliver MVP and scalable products faster than the competition."
+            },
+            "security": {
+                "title": "Enterprise Security",
+                "description": "Security by design. Our protocols ensure your data and infrastructure are protected against modern threats."
+            },
+            "support": {
+                "title": "24/7 Expert Support",
+                "description": "Our dedicated engineering team is always available to ensure smooth operations post-launch."
+            }
+        }
+    },
+    "HomePage": {
+        "Services": {
+            "badge": "OUR EXPERTISE",
+            "titleLine1": "Solutions for the",
+            "titleLine2": "Modern Enterprise",
+            "desc": "We combine cutting-edge technology with strategic implementation to drive real business value.",
+            "learnMore": "Learn More →",
+            "items": {
+                "ai": {
+                    "title": "AI Solutions",
+                    "desc": "Custom learning models optimized for efficiency. Predictive analytics, NLP, and automation solutions."
+                },
+                "blockchain": {
+                    "title": "Blockchain Dev",
+                    "desc": "Smart contracts, wallets, dApp development, and private blockchain infrastructure tailored for business."
+                },
+                "security": {
+                    "title": "Cybersecurity",
+                    "desc": "Enterprise-grade digital resilience. Advanced threat detection and zero-trust architecture implementation."
+                }
+            }
+        },
+        "Engineering": {
+            "badge": "WHY AYRIS TECH",
+            "titleLine1": "Engineering the",
+            "titleLine2": "Impossible",
+            "desc": "We don't just write code; we architect ecosystems. Our approach combines rigorous engineering standards with creative problem-solving to deliver scalable, secure, and future-proof solutions.",
+            "items": {
+                "rapid": {
+                    "title": "Rapid Deployment",
+                    "desc": "From concept to MVP in weeks, not months."
+                },
+                "security": {
+                    "title": "Enterprise Security",
+                    "desc": "Military-grade encryption and compliance built-in."
+                },
+                "arch": {
+                    "title": "Clean Architecture",
+                    "desc": "Maintainable, scalable codebase that grows with you."
+                }
+            }
+        },
+        "Testimonial": {
+            "text": "\"Ayris Tech transformed our legacy infrastructure in weeks, not months. Their grasp of decentralized systems is unparalleled in the industry.\"",
+            "author": "Marcus Chen",
+            "role": "CTO, BlockCore"
+        },
+        "CTA": {
+            "title": "Ready to scale?",
+            "subtitle": "Let's build something impossible. Schedule a consultation with our experts today.",
+            "button": "Start Your Project"
+        }
+    },
+    "PortfolioCTA": {
+        "badge": "REACH OUT",
+        "title": "LET'S BUILD THE",
+        "titleHighlight": "IMPOSSIBLE.",
+        "subtitle": "Whether it's a AAA game or a decentralized app, our team is initialized to bring your vision online.",
+        "button": "START YOUR PROJECT"
+    }
+}

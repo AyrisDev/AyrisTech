@@ -1,0 +1,136 @@
+.hero {
+    position: relative;
+    padding: 12rem 2rem 8rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: #050505;
+    overflow: hidden;
+}
+
+.bgWrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.bgImage {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2940&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.bgOverlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 70% 50%, transparent 0%, #050505 80%),
+        linear-gradient(to right, #050505 30%, transparent 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.featuredBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 77, 0, 0.1);
+    border: 1px solid rgba(255, 77, 0, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.excerpt {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.2);
+}
+
+.metaInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.separator {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 10rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .featuredBadge {
+        margin-bottom: 1.5rem;
+    }
+
+    .meta {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

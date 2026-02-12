@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.techBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.techBtn:hover {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.techBtn.selected {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    color: #fff;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.2s;
+}
+
+.techBtn.selected .icon {
+    filter: grayscale(0%);
+}
+
+.name {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.empty {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    padding: 1rem;
+    border: 1px dashed #333;
+    border-radius: 8px;
+    text-align: center;
+}

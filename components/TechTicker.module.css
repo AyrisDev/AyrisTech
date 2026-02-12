@@ -1,0 +1,38 @@
+.tickerWrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: #080808;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 0;
+    display: flex;
+}
+
+.ticker {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+}
+
+.techItem {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #27272a;
+    padding: 0 4rem;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.techItem:hover {
+    color: var(--primary);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
