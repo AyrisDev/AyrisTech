@@ -289,9 +289,13 @@
                     "title": "Blockchain Dev",
                     "desc": "Smart contracts, wallets, dApp development, and private blockchain infrastructure tailored for business."
                 },
-                "security": {
-                    "title": "Cybersecurity",
-                    "desc": "Enterprise-grade digital resilience. Advanced threat detection and zero-trust architecture implementation."
+                "mobile": {
+                    "title": "Mobile Development",
+                    "desc": "High-performance iOS and Android experiences using Flutter, React Native, and Native technologies."
+                },
+                "web": {
+                    "title": "Modern Web Apps",
+                    "desc": "Scalable, SEO-optimized web platforms built with Next.js and React for the modern digital era."
                 }
             }
         },

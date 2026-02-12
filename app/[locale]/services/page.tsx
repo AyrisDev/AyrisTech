@@ -2,7 +2,7 @@ import ServicesHero from '../../../components/ServicesHero';
 import ServicesGrid from '../../../components/ServicesGrid';
 import ServicesPortfolioCTA from '../../../components/ServicesPortfolioCTA';
 import ServicesWhyChooseUs from '../../../components/ServicesWhyChooseUs';
-
+import { Suspense } from 'react';
 
 import { getTranslations } from 'next-intl/server';
 
@@ -20,15 +20,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 import { servicesService } from '../../../services/services/servicesService';
 
-export default async function ServicesPage() {
+async function ServicesContent() {
     const services = await servicesService.getAllServices();
+    return <ServicesGrid services={services} />;
+}
 
+export default async function ServicesPage() {
     return (
         <>
             <main>
                 <ServicesHero />
                 <FadeIn delay={0.2}>
-                    <ServicesGrid services={services} />
+                    <Suspense fallback={<div style={{ height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading services...</div>}>
+                        <ServicesContent />
+                    </Suspense>
                 </FadeIn>
                 <FadeIn>
                     <ServicesPortfolioCTA />

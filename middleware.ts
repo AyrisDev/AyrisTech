@@ -9,60 +9,62 @@ const intlMiddleware = createIntlMiddleware({
     localePrefix: 'as-needed'
 });
 
+export const runtime = 'experimental-edge'; // or 'edge'
+
 export async function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
-    // 1. Handle Admin Routes (Supabase Auth + No Localization)
-    if (pathname.startsWith('/admin')) {
-        let response = NextResponse.next({
-            request: {
-                headers: request.headers,
-            },
-        });
-
-        const supabase = createServerClient(
-            process.env.NEXT_PUBLIC_SUPABASE_URL!,
-            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-            {
-                cookies: {
-                    get(name: string) {
-                        return request.cookies.get(name)?.value
-                    },
-                    set(name: string, value: string, options: CookieOptions) {
-                        request.cookies.set({ name, value, ...options })
-                        response = NextResponse.next({
-                            request: { headers: request.headers },
-                        })
-                        response.cookies.set({ name, value, ...options })
-                    },
-                    remove(name: string, options: CookieOptions) {
-                        request.cookies.set({ name, value: '', ...options })
-                        response = NextResponse.next({
-                            request: { headers: request.headers },
-                        })
-                        response.cookies.set({ name, value: '', ...options })
-                    },
-                },
-            }
-        );
-
-        const { data: { user } } = await supabase.auth.getUser();
-
-        // Protect admin dashboard
-        if (!pathname.startsWith('/admin/login') && !user) {
-            return NextResponse.redirect(new URL('/admin/login', request.url));
-        }
-
-        // Redirect to dashboard if already logged in
-        if (pathname.startsWith('/admin/login') && user) {
-            return NextResponse.redirect(new URL('/admin', request.url));
-        }
-
-        return response;
+    // Early exit for public localized routes to keep TTFB low
+    if (!pathname.startsWith('/admin')) {
+        return intlMiddleware(request);
     }
 
-    // 2. Handle Public Routes (Localization)
-    return intlMiddleware(request);
+    // 1. Handle Admin Routes (Supabase Auth + No Localization)
+    let response = NextResponse.next({
+        request: {
+            headers: request.headers,
+        },
+    });
+
+    const supabase = createServerClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        {
+            cookies: {
+                get(name: string) {
+                    return request.cookies.get(name)?.value
+                },
+                set(name: string, value: string, options: CookieOptions) {
+                    request.cookies.set({ name, value, ...options })
+                    response = NextResponse.next({
+                        request: { headers: request.headers },
+                    })
+                    response.cookies.set({ name, value, ...options })
+                },
+                remove(name: string, options: CookieOptions) {
+                    request.cookies.set({ name, value: '', ...options })
+                    response = NextResponse.next({
+                        request: { headers: request.headers },
+                    })
+                    response.cookies.set({ name, value: '', ...options })
+                },
+            },
+        }
+    );
+
+    const { data: { user } } = await supabase.auth.getUser();
+
+    // Protect admin dashboard
+    if (!pathname.startsWith('/admin/login') && !user) {
+        return NextResponse.redirect(new URL('/admin/login', request.url));
+    }
+
+    // Redirect to dashboard if already logged in
+    if (pathname.startsWith('/admin/login') && user) {
+        return NextResponse.redirect(new URL('/admin', request.url));
+    }
+
+    return response;
 }
 
 export const config = {

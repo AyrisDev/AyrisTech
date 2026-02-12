@@ -4,7 +4,8 @@ import styles from './Services.module.css';
 const serviceKeys = [
     { id: 'ai', icon: '🤖' },
     { id: 'blockchain', icon: '⛓️' },
-    { id: 'security', icon: '🛡️' }
+    { id: 'mobile', icon: '📱' },
+    { id: 'web', icon: '🌐' }
 ];
 
 const Services = () => {
@@ -33,7 +34,7 @@ const Services = () => {
                                 <div className={styles.icon}>{service.icon}</div>
                                 <h3 className={styles.cardTitle}>{t(`items.${service.id}.title`)}</h3>
                                 <p className={styles.cardDescription}>{t(`items.${service.id}.desc`)}</p>
-                                <a href="#" className={styles.learnMore}>{t('learnMore')}</a>
+                                <a href="/services" className={styles.learnMore}>{t('learnMore')}</a>
                             </div>
                         </div>
                     ))}

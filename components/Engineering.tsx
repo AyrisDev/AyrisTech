@@ -51,16 +51,21 @@ const Engineering = () => {
                         <div className={styles.codeContent}>
                             <pre>
                                 <code>
-                                    {`import { AyrisNetwork } from '@ayris/core';
+                                    {`import { AyrisAI } from '@ayris/core';
 
-async function deployNode() {
-  const node = new AyrisNetwork({
-    region: 'EU-West',
-    consensus: 'ProofOfTrust'
+// Initializing neural gateway...
+const ai = new AyrisAI({
+  optimization: 'latency',
+  precision: 'high'
+});
+
+async function bridgeReality() {
+  const result = await ai.solveImpossible({
+    task: 'global_scaling',
+    safety: 'military_grade'
   });
-
-  await node.initialize();
-  console.log('Node active');
+  
+  return result.success ? 'System: Optimized' : 'Error: Recalibrating';
 }`}
                                 </code>
                             </pre>

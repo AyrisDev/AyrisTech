@@ -7,6 +7,8 @@ import CTA from '../../components/CTA';
 import { FadeIn } from '../../components/animations/FadeIn';
 
 
+export const revalidate = 3600; // Cache the homepage for 1 hour
+
 export default function Home() {
   return (
     <>

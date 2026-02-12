@@ -291,9 +291,13 @@
                     "title": "Blokzincir Geliştirme",
                     "desc": "İşletmeler için uyarlanmış akıllı sözleşmeler, cüzdanlar, dApp geliştirme ve özel blok zinciri altyapısı."
                 },
-                "security": {
-                    "title": "Mobil ve Web Uygulamaları",
-                    "desc": "Kurumsal düzeyde mobil ve web uygulamaları"
+                "mobile": {
+                    "title": "Mobil Uygulamalar",
+                    "desc": "iOS ve Android platformları için yüksek performanslı, kullanıcı odaklı mobil deneyimler ve Flutter/React Native çözümleri."
+                },
+                "web": {
+                    "title": "Modern Web Teknolojileri",
+                    "desc": "Ölçeklenebilir, SEO dostu ve modern Next.js/React tabanlı web platformları ile dijital varlığınızı güçlendirin."
                 }
             }
         },
@@ -308,7 +312,7 @@
                     "desc": "Konseptten MVP'ye aylar değil, haftalar içinde."
                 },
                 "security": {
-                    "title": "Mobil ve Web Uygulamaları",
+                    "title": "Kurumsal Güvenlik",
                     "desc": "Askeri düzeyde şifreleme ve yerleşik uyumluluk."
                 },
                 "arch": {
