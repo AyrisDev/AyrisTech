@@ -100,7 +100,7 @@ export default async function RootLayout({
         <Script id="openpanel-init" strategy="beforeInteractive">
           {`window.op=window.op||function(){var n=[];return new Proxy(function(){arguments.length&&n.push([].slice.call(arguments))},{get:function(t,r){return"q"===r?n:function(){n.push([r].concat([].slice.call(arguments)))}} ,has:function(t,r){return"q"===r}}) }(); window.op('init', { clientId: '5a9049e9-1d7a-42d2-85b2-824ddc9b041f', trackScreenViews: true, trackOutgoingLinks: true, trackAttributes: true, });`}
         </Script>
-        <Script src="https://openpanel.dev/op1.js" strategy="afterInteractive" />
+        <Script src="/op.js" strategy="afterInteractive" />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
