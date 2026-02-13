@@ -8,6 +8,7 @@ import { locales } from '../../i18n/config';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from 'next/script';
+import OpenPanelTracker from "@/components/OpenPanelTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,7 +96,8 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Script id="openpanel-init" strategy="afterInteractive">
+        <OpenPanelTracker />
+        <Script id="openpanel-init" strategy="beforeInteractive">
           {`window.op=window.op||function(){var n=[];return new Proxy(function(){arguments.length&&n.push([].slice.call(arguments))},{get:function(t,r){return"q"===r?n:function(){n.push([r].concat([].slice.call(arguments)))}} ,has:function(t,r){return"q"===r}}) }(); window.op('init', { clientId: '5a9049e9-1d7a-42d2-85b2-824ddc9b041f', trackScreenViews: true, trackOutgoingLinks: true, trackAttributes: true, });`}
         </Script>
         <Script src="https://openpanel.dev/op1.js" strategy="afterInteractive" />
