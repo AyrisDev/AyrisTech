@@ -7,12 +7,8 @@ const nextConfig = {
     async rewrites() {
         return [
             {
-                source: "/js/script.js",
-                destination: "https://insight.ayris.tech/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js",
-            },
-            {
                 source: "/api/event",
-                destination: "https://insight.ayris.tech/api/event",
+                destination: "http://plausible-vcwggswcogs8c04kwsocs84k.65.109.236.58.sslip.io/api/event",
             },
         ];
     },
