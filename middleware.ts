@@ -9,64 +9,72 @@ const intlMiddleware = createIntlMiddleware({
     localePrefix: 'as-needed'
 });
 
-export const runtime = 'experimental-edge'; // or 'edge'
+export const runtime = 'experimental-edge';
 
 export async function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
-    // Early exit for public localized routes to keep TTFB low
-    if (!pathname.startsWith('/admin')) {
-        return intlMiddleware(request);
+    // 0. Skip middleware for static files in public folder
+    if (
+        pathname.match(/\.(js|css|png|jpg|jpeg|gif|webp|svg|ico|txt)$/) ||
+        pathname.includes('/_next/')
+    ) {
+        return NextResponse.next();
     }
 
     // 1. Handle Admin Routes (Supabase Auth + No Localization)
-    let response = NextResponse.next({
-        request: {
-            headers: request.headers,
-        },
-    });
-
-    const supabase = createServerClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-        {
-            cookies: {
-                get(name: string) {
-                    return request.cookies.get(name)?.value
-                },
-                set(name: string, value: string, options: CookieOptions) {
-                    request.cookies.set({ name, value, ...options })
-                    response = NextResponse.next({
-                        request: { headers: request.headers },
-                    })
-                    response.cookies.set({ name, value, ...options })
-                },
-                remove(name: string, options: CookieOptions) {
-                    request.cookies.set({ name, value: '', ...options })
-                    response = NextResponse.next({
-                        request: { headers: request.headers },
-                    })
-                    response.cookies.set({ name, value: '', ...options })
-                },
+    if (pathname.startsWith('/admin')) {
+        let response = NextResponse.next({
+            request: {
+                headers: request.headers,
             },
+        });
+
+        const supabase = createServerClient(
+            process.env.NEXT_PUBLIC_SUPABASE_URL!,
+            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+            {
+                cookies: {
+                    get(name: string) {
+                        return request.cookies.get(name)?.value
+                    },
+                    set(name: string, value: string, options: CookieOptions) {
+                        request.cookies.set({ name, value, ...options })
+                        response = NextResponse.next({
+                            request: { headers: request.headers },
+                        })
+                        response.cookies.set({ name, value, ...options })
+                    },
+                    remove(name: string, options: CookieOptions) {
+                        request.cookies.set({ name, value: '', ...options })
+                        response = NextResponse.next({
+                            request: { headers: request.headers },
+                        })
+                        response.cookies.set({ name, value: '', ...options })
+                    },
+                },
+            }
+        );
+
+        const { data: { user } } = await supabase.auth.getUser();
+
+        // Protect admin dashboard
+        if (!pathname.startsWith('/admin/login') && !user) {
+            return NextResponse.redirect(new URL('/admin/login', request.url));
         }
-    );
 
-    const { data: { user } } = await supabase.auth.getUser();
+        // Redirect to dashboard if already logged in
+        if (pathname.startsWith('/admin/login') && user) {
+            return NextResponse.redirect(new URL('/admin', request.url));
+        }
 
-    // Protect admin dashboard
-    if (!pathname.startsWith('/admin/login') && !user) {
-        return NextResponse.redirect(new URL('/admin/login', request.url));
+        return response;
     }
 
-    // Redirect to dashboard if already logged in
-    if (pathname.startsWith('/admin/login') && user) {
-        return NextResponse.redirect(new URL('/admin', request.url));
-    }
-
-    return response;
+    // 2. Handle Public Routes (Localization)
+    return intlMiddleware(request);
 }
 
 export const config = {
-    matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|js|css)$).*)']
+    matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
 };
