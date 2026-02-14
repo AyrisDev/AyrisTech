@@ -12,6 +12,15 @@ const intlMiddleware = createIntlMiddleware({
 export async function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
+    // 0. Skip middleware for static files and internal next paths
+    if (
+        pathname.match(/\.(js|css|png|jpg|jpeg|gif|webp|svg|ico|txt)$/) ||
+        pathname.includes('/_next/') ||
+        pathname.startsWith('/api/')
+    ) {
+        return NextResponse.next();
+    }
+
     // 1. Handle Admin Routes (Supabase Auth + No Localization)
     if (pathname.startsWith('/admin')) {
         let response = NextResponse.next({

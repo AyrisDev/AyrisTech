@@ -2,7 +2,6 @@
 
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef } from 'react';
-import { init, track } from '@plausible-analytics/tracker';
 
 const RouteTracker = () => {
     const pathname = usePathname();
@@ -10,21 +9,16 @@ const RouteTracker = () => {
 
     useEffect(() => {
         if (!initialized.current) {
-            init({
-                domain: 'ayris.tech',
-                endpoint: '/api/event', // Proxied via next.config.mjs
-                outboundLinks: true,
-                fileDownloads: true,
-                hashBasedRouting: false,
-                autoCapturePageviews: false, // Manual tracking
-            });
+            (window as any).plausible = (window as any).plausible || function() {
+                ((window as any).plausible.q = (window as any).plausible.q || []).push(arguments);
+            };
             initialized.current = true;
         }
     }, []);
 
     useEffect(() => {
-        if (initialized.current) {
-            track('pageview', {
+        if (initialized.current && (window as any).plausible) {
+            (window as any).plausible('pageview', {
                 url: window.location.href
             });
         }
