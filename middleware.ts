@@ -9,15 +9,14 @@ const intlMiddleware = createIntlMiddleware({
     localePrefix: 'as-needed'
 });
 
-export const runtime = 'experimental-edge';
-
 export async function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
-    // 0. Skip middleware for static files in public folder
+    // 0. Skip middleware for static files
     if (
-        pathname.match(/\.(js|css|png|jpg|jpeg|gif|webp|svg|ico|txt)$/) ||
-        pathname.includes('/_next/')
+        pathname.includes('.') || 
+        pathname.startsWith('/_next/') || 
+        pathname.startsWith('/api/')
     ) {
         return NextResponse.next();
     }
@@ -76,5 +75,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-    matcher: ['/((?!api|_next/static|_next/image|favicon.ico|op.js|pl.js).*)']
+    matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
 };
