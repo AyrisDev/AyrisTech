@@ -8,7 +8,7 @@ const nextConfig = {
         return [
             {
                 source: "/api/event",
-                destination: "http://plausible-vcwggswcogs8c04kwsocs84k.65.109.236.58.sslip.io/api/event",
+                destination: "https://analytics.ayris.tech/api/event",
             },
         ];
     },
