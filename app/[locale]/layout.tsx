@@ -109,6 +109,20 @@ export default async function RootLayout({
           strategy="afterInteractive"
         />
 
+        {/* Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YXK4WT039F"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YXK4WT039F');
+          `}
+        </Script>
+
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
